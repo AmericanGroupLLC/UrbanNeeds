@@ -1,9 +1,7 @@
 # OSX
-#
 .DS_Store
 
 # Xcode
-#
 build/
 *.pbxuser
 !default.pbxuser
@@ -22,32 +20,59 @@ DerivedData
 *.xcuserstate
 project.xcworkspace
 
+# CocoaPods
+ios/Pods/
+ios/Podfile.lock
+
 # Android/IntelliJ
-#
 build/
-.idea
-.gradle
+.idea/
+.gradle/
 local.properties
 *.iml
+*.hprof
+android/app/release/
+android/.cxx/
+android/captures/
 
 # node.js
-#
 node_modules/
-npm-debug.log
-yarn-error.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Metro / React Native
+.metro-health-check*
+.expo/
+.expo-shared/
 
 # BUCK
 buck-out/
 \.buckd/
 *.keystore
+!debug.keystore
 
 # fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/
-
 */fastlane/report.xml
 */fastlane/Preview.html
 */fastlane/screenshots
+*/fastlane/test_output
+
+# Editor / IDE
+.vscode/
+*.swp
+*.swo
+*~
+
+# Coverage
+coverage/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# OS
+Thumbs.db
+ehthumbs.db
